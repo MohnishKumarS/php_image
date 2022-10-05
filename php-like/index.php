@@ -109,7 +109,7 @@ require "assets/db/db.php";
                             }
                         },
                         success: function(data) {
-                            console.log(data)
+                            // console.log(data)
                         }
                     });
                 })
