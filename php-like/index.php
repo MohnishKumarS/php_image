@@ -41,8 +41,14 @@ require "assets/db/db.php";
     <!-- <div id="loader">loading..</div> -->
 
     <div class="container">
-        <div>
-            <h1 class="bg-light p-4 text-center">Products Like and Dislike</h1>
+        <div class="d-flex justify-content-between bg-light p-4 text-center">
+            <div>
+            <h1 class="  fw-bold text-warning">Favorite Product</h1>
+            </div>
+            
+            <div>
+                <a class='btn btn-primary' type='submit' href='get.php'>Favorite</a>
+            </div>
         </div>
 
         <div>
