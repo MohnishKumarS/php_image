@@ -15,10 +15,6 @@ if (isset($_POST['id'])) {
     }
 }
 
-if (isset($_REQUEST['submit'])) {
-    echo "hii";
-}
-
 
 
 
@@ -65,6 +61,7 @@ if (isset($_REQUEST['submit'])) {
         if ($result->num_rows > 0) {
             //  echo "not empty";
             while ($row = $result->fetch_assoc()) {
+                
 
 
 

@@ -1,0 +1,69 @@
+{
+    "students":[  
+        {  
+          " name":"Moni",
+           "gender":"Male",
+           "physics":88,
+           "maths":87,
+           "english":78
+        },
+        {  
+          " name":"santhosh",
+           "gender":"Male",
+           "physics":96,
+           "maths":100,
+           "english":95
+        },
+        {  
+          " name":"Anwar",
+           "gender":"Male",
+           "physics":89,
+           "maths":90,
+           "english":70
+        },
+        {  
+          " name":"Yasu",
+           "gender":"Male",
+           "physics":30,
+           "maths":25,
+           "english":40
+        },
+        {  
+          " name":"dp",
+           "gender":"Female",
+           "physics":67,
+           "maths":45,
+           "english":78
+        },
+        {  
+          " name":"Leela",
+           "gender":"Female",
+           "physics":56,
+           "maths":46,
+           "english":78
+        },
+        {  
+          " name":"yazh",
+           "gender":"Male",
+           "physics":12,
+           "maths":67,
+           "english":67
+        },
+        {  
+          " name":"Ajith",
+           "gender":"Female",
+           "physics":78,
+           "maths":71,
+           "english":67
+        },
+        {  
+          " name":"Sunil",
+           "gender":"Male",
+           "physics":56,
+           "maths":45,
+           "english":67
+        }
+   
+       
+     ]
+}

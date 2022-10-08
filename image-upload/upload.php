@@ -1,5 +1,6 @@
 <?php
 include '../assets/db/db.php';
+session_start();
 
 // extract($_REQUEST);
     if(isset($_POST['submit'])){
@@ -23,12 +24,9 @@ include '../assets/db/db.php';
         move_uploaded_file($_FILES['image']['tmp_name'],$profilepic);
 
 
-        $sql = "INSERT  into upload (image,text) values('$profilepic','$text')";
+        $sql = "INSERT  into upload (username,password,image,text) values('".$_SESSION['name']."','".$_SESSION['pass']."','$profilepic','$text')";
         $conn->query($sql);
-
-
-
-        
+   
 
     }
 
@@ -40,7 +38,11 @@ include '../assets/db/db.php';
 //    echo '<br>';
 //    echo $_SERVER['REQUEST_URI'];
 //    echo '<br>';
+//  ========================cookie========================== 
 
+// if(isset($_POST['login'])){
+//     echo "cokiedwed";
+// }
 
 ?>
 
@@ -67,6 +69,10 @@ include '../assets/db/db.php';
 
 
     <div class="container">
+
+    <div class='text-end '>
+        <a href="index.php" class='btn btn-info fw-bold mt-4'>Back to  Home</a>
+    </div>
         <div class="mt-5 border bg-light p-5 text-center">
 
             <h1 class="fw-bold ">
@@ -78,8 +84,8 @@ include '../assets/db/db.php';
                 <input type="file" name="image" id="fileToUpload"><br>
                 <textarea name="text" id="" cols="50" rows="5" class="mt-5"></textarea><br>
                 <input type="submit" value="Upload" class="btn btn-success w-25 mt-4" name="submit">
-               
-                
+
+
             </form>
         </div>
 
@@ -122,6 +128,9 @@ include '../assets/db/db.php';
              
            
             ?>
+
+
+
 
         </div>
     </div>

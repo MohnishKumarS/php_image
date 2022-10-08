@@ -115,40 +115,11 @@ require "assets/db/db.php";
                             }
                         },
                         success: function(data) {
-                            // console.log(data)
+                            console.log(data)
                         }
                     });
                 })
 
-                // $(".like").click(function() {
-                //     // alert('hi');
-                //     // let product_id = $(this > 'span').attr('product-id');
-                //     let status = $(".like > span").attr('status');
-                //     // console.log(id);
-
-                //     console.log(status)
-
-
-                //     // $.ajax({
-                //     //     url: "get.php",
-                //     //     type: "POST",
-                //     //     data: {
-                //     //         id: {
-                //     //             'product_id': product_id,
-                //     //             'status': status
-                //     //         }
-                //     //     },
-                //     //     success: function(data) {
-                //     //         if (data !== 'liked') {
-
-                //     //         } else {
-
-                //     //         }
-                //     //         console.log(data);
-                //     //     }
-
-                //     // });
-                // });
             });
 
         </script>
